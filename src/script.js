@@ -1,5 +1,5 @@
 // ok first select all buttons
-const links = document.querySelectorAll('a');
+const links = document.querySelectorAll('#menu .options');
 
 // the element itself
 const numberDisplay = document.querySelector('#hover-button-number');
@@ -21,3 +21,8 @@ links.forEach(button => {
 window.addEventListener('load', () => {
     document.body.style.visibility = 'visible';
 })
+
+document.getElementById('entry-btn').addEventListener('click', () => {
+    document.getElementById('menu').style.visibility = 'visible';
+    document.getElementById('entry-btn').remove();
+});

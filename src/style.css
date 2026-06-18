@@ -79,7 +79,7 @@ body {
     text-underline-offset: 6px; */
 }
 
-#options {
+#menu {
     display: flex;
     flex-direction: column;
     /* reminder for me: skew turns square to parallelograms whilst rotate.. rotates*/
@@ -88,10 +88,10 @@ body {
     padding-right: 25%;
     padding-top: 18%;
     align-items: flex-end;
-    text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.8);
+    visibility: hidden;
 }
 
-#options a {
+.options {
     text-decoration: none;
     position: relative;
     border: none;
@@ -102,14 +102,15 @@ body {
     text-align: center;
     white-space: nowrap;
     transform-origin: right center;
+    text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.8);
 }
 
-#options a:hover {
+#menu .options:hover {
     color: rgb(10, 10, 10);
     text-shadow: none;
 }
 
-#options a::before {
+.options::before {
     position: absolute;
     background-color: rgb(255, 50, 50);
     /* to center the box */
@@ -147,10 +148,27 @@ body {
     }
 }
 
-#options a:hover::before {
+.options:hover::before {
     opacity: 1;
     animation: wiggle 0.27s infinite;
 }
+
+#entry-btn {
+    font-size: 90px;
+    position: fixed;
+    top: 40%;
+    right: 20%;
+    transform: rotate(var(--rotation-variation2)) skewX(var(--rotation-variation2));
+    color: var(--color2);
+}
+
+#entry-btn:hover {
+    transform: rotate(var(--rotation-variation2)) skewX(var(--rotation-variation2)) scale(var(--button-hover-scale));
+    color: rgb(10, 10, 10);
+    text-shadow: none;
+}
+
+/* individual buttons */
 
 #op1,
 #op2,
@@ -194,6 +212,9 @@ body {
 #op6:hover {
     transform: rotate(var(--rotation-variation3)) skewX(var(--rotation-variation3)) scale(var(--button-hover-scale));
 }
+
+/* Entry stuff */
+
 
 /* STUFF FOR BAD SCREENS */
 
