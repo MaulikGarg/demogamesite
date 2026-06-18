@@ -14,6 +14,6 @@ links.forEach(button => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('load', () => {
     document.body.style.visibility = 'visible';
 })
