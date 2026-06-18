@@ -22,6 +22,11 @@
     letter-spacing: -0.09em;
 }
 
+/* removed when content is loaded*/
+body {
+    visibility: hidden;
+}
+
 /* YOU ARE A PRISONER OF FATE, VIDEO. LOCKED BEHIND EVERYTHING ON THIS WEBPAGE! /ref */
 #bg-video-main {
     /* Dont let this vid move lmao*/

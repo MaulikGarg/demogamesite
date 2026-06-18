@@ -13,3 +13,7 @@ links.forEach(button => {
         numberDisplay.textContent = "67";
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.visibility = 'visible';
+})
