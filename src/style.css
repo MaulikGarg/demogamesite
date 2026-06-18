@@ -10,7 +10,7 @@
     --rotation-variation3: -19deg;
     --button-margin: -15px;
     --button-hover-scale: 1.2;
-    --color1 : #42D0FD;
+    --color1: #42D0FD;
     --color2: #55baff;
 }
 
@@ -19,7 +19,7 @@
     padding: 0;
     font-style: italic;
     font-family: 'mainfont', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: -0.09em;
+    letter-spacing: -0.1em;
 }
 
 /* removed when content is loaded*/
@@ -86,8 +86,9 @@ body {
     transform-origin: right center;
     overflow: visible;
     padding-right: 25%;
-    padding-top: 20%;
+    padding-top: 18%;
     align-items: flex-end;
+    text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.8);
 }
 
 #options a {
@@ -105,6 +106,7 @@ body {
 
 #options a:hover {
     color: rgb(10, 10, 10);
+    text-shadow: none;
 }
 
 #options a::before {
@@ -154,7 +156,8 @@ body {
 #op2,
 #op3,
 #op4,
-#op5 {
+#op5,
+#op6 {
     margin-bottom: var(--button-margin);
     transition: transform 200ms;
 }
@@ -171,7 +174,8 @@ body {
     color: var(--color1);
 }
 
-#op4 {
+#op4,
+#op6 {
     transform: rotate(var(--rotation-variation3)) skewX(var(--rotation-variation3));
     color: var(--color2);
 }
@@ -186,7 +190,8 @@ body {
     transform: rotate(var(--rotation-variation1)) skewX(var(--rotation-variation1)) scale(var(--button-hover-scale));
 }
 
-#op4:hover {
+#op4:hover,
+#op6:hover {
     transform: rotate(var(--rotation-variation3)) skewX(var(--rotation-variation3)) scale(var(--button-hover-scale));
 }
 
